@@ -23,8 +23,8 @@
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Source ✍🏻 Open 👐🏻",
-		"email": "Source/Open@PlayForm.LTD",
-		"url": "HTTPS://PlayForm.LTD"
+		"email": "Source/Open@PlayForm.Cloud",
+		"url": "HTTPS://PlayForm.Cloud"
 	},
 	"type": "module",
 	"main": "./Target/Void/Resolve.js",
@@ -43,11 +43,11 @@
 	},
 	"devDependencies": {
 		"@playform/build": "0.2.3",
-		"@types/node": "22.15.2",
+		"@types/node": "22.15.3",
 		"rimraf": "6.0.1",
 		"ts-node": "10.9.2",
 		"tsconfig-paths": "4.2.0",
 		"typescript": "5.8.3",
-		"vite": "6.3.3"
+		"vite": "6.3.5"
 	}
 }
