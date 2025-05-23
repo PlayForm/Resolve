@@ -15,9 +15,9 @@ export const _Function = async () => {
 	Logger.Param("options", Option);
 
 	try {
-		const Configuration = await (
-			await import("@Function/Load.js")
-		).default(Option.Project);
+		const Configuration = await (await import("@Function/Load.js")).default(
+			Option.Project,
+		);
 
 		const { rootDir, outDir, baseUrl, paths } = Configuration.options ?? {};
 
@@ -28,21 +28,24 @@ export const _Function = async () => {
 			paths,
 		});
 
-		const Path = await (
-			await import("@Function/Resolve/Path.js")
-		).default(Option, Configuration);
+		const Path = await (await import("@Function/Resolve/Path.js")).default(
+			Option,
+			Configuration,
+		);
 
 		Logger.Param("Path", Path);
 
-		const Alias = await (
-			await import("@Function/Compute.js")
-		).default(Path.Base, Configuration?.options?.paths ?? {});
+		const Alias = await (await import("@Function/Compute.js")).default(
+			Path.Base,
+			Configuration?.options?.paths ?? {},
+		);
 
 		Logger.Param("Alias", Alias);
 
-		const File = await (
-			await import("@Function/Get.js")
-		).default(Path.Target, Option.Extension);
+		const File = await (await import("@Function/Get.js")).default(
+			Path.Target,
+			Option.Extension,
+		);
 
 		Logger.Param("filesToProcess", File);
 

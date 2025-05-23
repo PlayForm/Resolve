@@ -46,7 +46,7 @@ import data from "~/some/data/path.json";
 ```
 
 _NOTE: When importing JSON files, ensure that you use the `.json` extension. See
-issue [`#253`](HTTPS://GitHub.Com/PlayForm/Resolve/issues/253)._
+issue [`#253`](https://GitHub.Com/PlayForm/Resolve/issues/253)._
 
 **ESM dynamic imports**
 
@@ -161,7 +161,7 @@ Use this flag to not emit any changes to your files. Recommended to be used with
 
 _This option is only available when using the CLI._
 
-[Resolve]: HTTPS://NPMJS.Org/@playform/resolve
+[Resolve]: https://NPMJS.Org/@playform/resolve
 
 ## Changelog
 

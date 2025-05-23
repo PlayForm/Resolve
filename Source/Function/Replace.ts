@@ -16,9 +16,10 @@ export const _Function = async (
 	Path: Pick<ProgramPaths, "Source" | "Target">,
 ): Promise<{ Changed: boolean; Text: string; Change: TextChange[] }> => {
 	try {
-		await (
-			await import("node:fs/promises")
-		).access(filePath, (await import("node:fs/promises")).constants.F_OK);
+		await (await import("node:fs/promises")).access(
+			filePath,
+			(await import("node:fs/promises")).constants.F_OK,
+		);
 	} catch (error) {
 		throw new (await import("@Class/Error/FileNotFound")).default(
 			_Function.name,
@@ -26,9 +27,10 @@ export const _Function = async (
 		);
 	}
 
-	const Text = await (
-		await import("node:fs/promises")
-	).readFile(filePath, "utf-8");
+	const Text = await (await import("node:fs/promises")).readFile(
+		filePath,
+		"utf-8",
+	);
 
 	const Change: TextChange[] = [];
 
