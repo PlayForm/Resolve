@@ -42,12 +42,12 @@
 		"fast-glob": "3.3.3"
 	},
 	"devDependencies": {
-		"@playform/build": "0.2.4",
-		"@types/node": "24.0.3",
+		"@playform/build": "0.2.5",
+		"@types/node": "24.0.8",
 		"rimraf": "6.0.1",
 		"ts-node": "10.9.2",
 		"tsconfig-paths": "4.2.0",
 		"typescript": "5.8.3",
-		"vite": "6.3.5"
+		"vite": "7.0.0"
 	}
 }
